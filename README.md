@@ -1,4 +1,6 @@
-# Apify SDK: The scalable web crawling and scraping library for JavaScript
+# Apify SDK v2: The scalable web crawling and scraping library for JavaScript
+
+## This project is no longer maintained. Check out [Crawlee](https://crawlee.dev/docs/upgrading/upgrading-to-v3), the successor to Apify SDK v2!
 
 <!-- Mirror this part to src/index.js -->
 

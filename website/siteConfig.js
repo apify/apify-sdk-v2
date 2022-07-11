@@ -10,10 +10,10 @@
 
 const extlink = require('remarkable-extlink');
 
-const repoUrl = 'https://github.com/apify/apify-js';
+const repoUrl = 'https://github.com/apify/apify-sdk-v2';
 
 const siteConfig = {
-    title: 'Apify SDK', // Title for your website.
+    title: 'Apify SDK v2', // Title for your website.
     // This is also used as page meta description for SEO, so write it carefully.
     // TODO: Take this from package.json
     // eslint-disable-next-line max-len
@@ -23,7 +23,7 @@ const siteConfig = {
     baseUrl: '/', // Base URL for your project */
 
     // Used for publishing and more
-    projectName: 'apify-js',
+    projectName: 'apify-sdk-v2',
     organizationName: 'apify',
 
     // For no header links in the top nav bar -> headerLinks: [],

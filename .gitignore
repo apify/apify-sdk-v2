@@ -14,7 +14,7 @@ pids
 .idea
 .vscode
 yarn.lock
-package-lock.json
+# package-lock.json
 tmp
 jsconfig.json
 types

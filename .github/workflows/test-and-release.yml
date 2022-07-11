@@ -58,7 +58,8 @@ jobs:
     # and triggering of docker image builds in the apify-actor-docker repo.
     deploy:
         name: Publish to NPM and release images
-        if: github.ref == 'refs/heads/master' || github.event_name == 'release'
+        # if: github.ref == 'refs/heads/master' || github.event_name == 'release'
+        if: github.event_name == 'release' # run only for production releases, no more betas as v2 is legacy and v3 is crawlee
         needs: [ lint, build_and_test ]
         runs-on: ubuntu-latest
         steps:
@@ -87,16 +88,17 @@ jobs:
                     echo "::set-output name=playwright::$playwright"
             -   name: Publish to NPM
                 run: NODE_AUTH_TOKEN=${{secrets.NPM_TOKEN}} npm publish --tag ${{ env.RELEASE_TAG }}
-            -   name: Trigger Docker Image Build
-                uses: peter-evans/repository-dispatch@v2
-                with:
-                    token: ${{ secrets.TRIGGER_DOCKER_IMAGE_BUILD_TOKEN }}
-                    repository: apify/apify-actor-docker
-                    event-type: build-node-images
-                    client-payload: >
-                        {
-                          "release_tag": "${{ env.RELEASE_TAG }}",
-                          "apify_version": "${{ steps.versions.outputs.apify }}",
-                          "puppeteer_version": "${{ steps.versions.outputs.puppeteer }}",
-                          "playwright_version": "${{ steps.versions.outputs.playwright }}"
-                        }
+            # docker images handled by crawlee
+            # -   name: Trigger Docker Image Build
+            #     uses: peter-evans/repository-dispatch@v2
+            #     with:
+            #         token: ${{ secrets.TRIGGER_DOCKER_IMAGE_BUILD_TOKEN }}
+            #         repository: apify/apify-actor-docker
+            #         event-type: build-node-images
+            #         client-payload: >
+            #             {
+            #               "release_tag": "${{ env.RELEASE_TAG }}",
+            #               "apify_version": "${{ steps.versions.outputs.apify }}",
+            #               "puppeteer_version": "${{ steps.versions.outputs.puppeteer }}",
+            #               "playwright_version": "${{ steps.versions.outputs.playwright }}"
+            #             }

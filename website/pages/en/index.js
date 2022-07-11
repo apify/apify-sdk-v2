@@ -78,6 +78,13 @@ class HomeSplash extends React.Component {
         const language = this.props.language || '';
         return (
             <SplashContainer>
+                <h2 style={{
+                    border: '3px solid #ff9012',
+                    borderRadius: 20,
+                    padding: 20,
+                    boxShadow: '2px 2px 10px #ccc',
+                    margin: '20px 0 50px',
+                }}>Check out <a href="https://crawlee.dev/docs/upgrading/upgrading-to-v3" target="_blank">Crawlee</a>, the successor to Apify SDK v2!</h2>
                 {/*<Logo img_src={imgUrl('apify_logo.svg')}/>*/}
                 <div className="inner">
                     <ProjectTitle/>

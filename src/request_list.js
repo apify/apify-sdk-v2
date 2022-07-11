@@ -20,7 +20,7 @@ const CONTENT_TYPE_BINARY = 'application/octet-stream';
 
 /**
  * @typedef RequestListOptions
- * @property {Array<RequestOptions | Request | { requestsFromUrl: string, regex?: RegExp } | string>} [sources]
+ * @property {Array<RequestOptions | Request | { requestsFromUrl: string } | string>} [sources]
  *  An array of sources of URLs for the {@link RequestList}. It can be either an array of strings,
  *  plain objects that define at least the `url` property, or an array of {@link Request} instances.
  *
@@ -821,7 +821,7 @@ export class RequestList {
  *
  *   If `null`, the list will not be persisted and will only be stored in memory. Process restart
  *   will then cause the list to be crawled again from the beginning. We suggest always using a name.
- * @param {RequestListOptions['sources']} sources
+ * @param {Array<RequestOptions|Request|string>} sources
  *  An array of sources of URLs for the {@link RequestList}. It can be either an array of strings,
  *  plain objects that define at least the `url` property, or an array of {@link Request} instances.
  *

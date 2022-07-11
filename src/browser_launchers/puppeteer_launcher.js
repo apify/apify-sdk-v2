@@ -35,7 +35,7 @@ const LAUNCH_PUPPETEER_DEFAULT_VIEWPORT = {
  * ```
  *
  * @typedef PuppeteerLaunchContext
- * @property {Parameters<PuppeteerNode['launch']>[0]} [launchOptions]
+ * @property {Record<string, any>} [launchOptions]
  *  `puppeteer.launch` [options](https://pptr.dev/#?product=Puppeteer&version=v13.5.1&show=api-puppeteerlaunchoptions)
  * @property {string} [proxyUrl]
  *   URL to a HTTP proxy server. It must define the port number,
