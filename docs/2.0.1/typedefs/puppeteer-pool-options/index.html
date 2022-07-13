@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>PuppeteerPoolOptions · Apify SDK v2</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;a name=&quot;puppeteerpooloptions&quot;&gt;&lt;/a&gt;"/><meta name="docsearch:version" content="2.0.1"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="PuppeteerPoolOptions · Apify SDK v2"/><meta property="og:type" content="website"/><meta property="og:url" content="https://sdk.apify.com/"/><meta property="og:description" content="&lt;a name=&quot;puppeteerpooloptions&quot;&gt;&lt;/a&gt;"/><meta property="og:image" content="https://sdk.apify.com/img/apify_og_SDK.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://sdk.apify.com/img/apify_og_SDK.png"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-67003981-4"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'UA-67003981-4');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/js/code-block-buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/prism.css"/><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/apify_logo.svg" alt="Apify SDK v2"/><h2 class="headerTitleWithLogo">Apify SDK v2</h2></a><a href="/versions"><h3>2.0.1</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><li class=""><a href="/docs/2.0.1/guides/motivation" target="_self">Guide</a></li><li class=""><a href="/docs/2.0.1/examples/crawl-multiple-urls" target="_self">Examples</a></li><li class=""><a href="/docs/2.0.1/api/apify" target="_self">API Reference</a></li><li class=""><a href="https://github.com/apify/apify-sdk-v2" target="_self">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">PuppeteerPoolOptions</h1></header><article><div><span><p><a name="puppeteerpooloptions"></a></p>
+<h2><a class="anchor" aria-hidden="true" id="properties"></a><a href="#properties" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Properties</h2>
+<h3><a class="anchor" aria-hidden="true" id="maxopenpagesperinstance"></a><a href="#maxopenpagesperinstance" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>maxOpenPagesPerInstance</code></h3>
+<p><strong>Type</strong>: <code>number</code> <code> = 50</code></p>
+<p>Maximum number of open pages (i.e. tabs) per browser. When this limit is reached, new pages are loaded in a new browser instance.</p>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="retireinstanceafterrequestcount"></a><a href="#retireinstanceafterrequestcount" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>retireInstanceAfterRequestCount</code></h3>
+<p><strong>Type</strong>: <code>number</code> <code> = 100</code></p>
+<p>Maximum number of requests that can be processed by a single browser instance. After the limit is reached, the browser is retired and new requests are
+handled by a new browser instance.</p>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="puppeteeroperationtimeoutsecs"></a><a href="#puppeteeroperationtimeoutsecs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>puppeteerOperationTimeoutSecs</code></h3>
+<p><strong>Type</strong>: <code>number</code> <code> = 15</code></p>
+<p>All browser management operations such as launching a new browser, opening a new page or closing a page will timeout after the set number of seconds
+and the connected browser will be retired.</p>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="instancekillerintervalsecs"></a><a href="#instancekillerintervalsecs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>instanceKillerIntervalSecs</code></h3>
+<p><strong>Type</strong>: <code>number</code> <code> = 60</code></p>
+<p>Indicates how often are the open Puppeteer instances checked whether they can be closed.</p>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="killinstanceaftersecs"></a><a href="#killinstanceaftersecs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>killInstanceAfterSecs</code></h3>
+<p><strong>Type</strong>: <code>number</code> <code> = 300</code></p>
+<p>When Puppeteer instance reaches the <code>retireInstanceAfterRequestCount</code> limit then it is considered retired and no more tabs will be opened. After the
+last tab is closed the whole browser is closed too. This parameter defines a time limit between the last tab was opened and before the browser is
+closed even if there are pending open tabs.</p>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="launchpuppeteerfunction"></a><a href="#launchpuppeteerfunction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>launchPuppeteerFunction</code></h3>
+<p><strong>Type</strong>: <a href="../typedefs/launch-puppeteer-function"><code>LaunchPuppeteerFunction</code></a></p>
+<p>Overrides the default function to launch a new Puppeteer instance. It must return a promise resolving to
+<a href="https://github.com/puppeteer/puppeteer/blob/master/docs/api.md#class-browser" target="_blank" rel="noopener"><code>Browser</code></a> instance.</p>
+<p>The function receives one parameter that includes launch options, such as <code>proxyUrl</code> and other options generated by the <code>PuppeteerPool</code> instance. You
+can extend or update this options object, but you must not ignore it.</p>
+<p><strong>Correct:</strong></p>
+<pre><code class="hljs css language-javascript"><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">launchPuppeteerFunction</span><span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> newOpts <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span>options<span class="token punctuation">,</span>
+        foo<span class="token operator">:</span> <span class="token string">'bar'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// do some other things</span>
+
+    <span class="token keyword">return</span> Apify<span class="token punctuation">.</span><span class="token function">launchPuppeteer</span><span class="token punctuation">(</span>newOpts<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>Incorrect:</strong></p>
+<pre><code class="hljs css language-javascript"><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">launchPuppeteerFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> opts <span class="token operator">=</span> <span class="token punctuation">{</span>
+        foo<span class="token operator">:</span> <span class="token string">'bar'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token comment">// Because we ignored the options, correct parameters</span>
+    <span class="token comment">// will not make it to the browser. Eg. this prevents</span>
+    <span class="token comment">// proxyConfiguration from working correctly.</span>
+    <span class="token keyword">return</span> Apify<span class="token punctuation">.</span><span class="token function">launchPuppeteer</span><span class="token punctuation">(</span>opts<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="launchpuppeteeroptions"></a><a href="#launchpuppeteeroptions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>launchPuppeteerOptions</code></h3>
+<p><strong>Type</strong>: <a href="../typedefs/launch-puppeteer-options"><code>LaunchPuppeteerOptions</code></a></p>
+<p>Options used by <a href="../api/apify#launchpuppeteer"><code>Apify.launchPuppeteer()</code></a> to start new Puppeteer instances.</p>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="recyclediskcache"></a><a href="#recyclediskcache" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>recycleDiskCache</code></h3>
+<p><strong>Type</strong>: <code>boolean</code> <code> = false</code></p>
+<p>Enables recycling of disk cache directories by Chrome instances. When a browser instance is closed, its disk cache directory is not deleted but it's
+used by a newly opened browser instance. This is useful to reduce amount of data that needs to be downloaded to speed up crawling and reduce proxy
+usage. Note that the new browser starts with empty cookies, local storage etc. so this setting doesn't affect anonymity of your crawler.</p>
+<p>Beware that the disk cache directories can consume a lot of disk space. To limit the space consumed, you can pass the <code>--disk-cache-size=X</code> argument
+to <code>launchPuppeteer</code> <code>args</code>, where <code>X</code> is the approximate maximum number of bytes for disk cache.</p>
+<p>Do not use the <code>recycleDiskCache</code> setting together with <code>--disk-cache-dir</code> argument in <code>launchPuppeteer</code> <code>args</code>, the behavior is undefined.</p>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="useincognitopages"></a><a href="#useincognitopages" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>useIncognitoPages</code></h3>
+<p><strong>Type</strong>: <code>boolean</code></p>
+<p>With this option selected, all pages will be opened in a new incognito browser context, which means that they will not share cookies or cache and
+their resources will not be throttled by one another.</p>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="sessionpool"></a><a href="#sessionpool" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>sessionPool</code></h3>
+<p><strong>Type</strong>: <a href="../api/session-pool"><code>SessionPool</code></a></p>
+<p>A pool of Session instances.</p>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="proxyconfiguration"></a><a href="#proxyconfiguration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>proxyConfiguration</code></h3>
+<p><strong>Type</strong>: <a href="../api/proxy-configuration"><code>ProxyConfiguration</code></a></p>
+<p>If set, <code>PuppeteerPool</code> will be configured for all connections to use <a href="https://my.apify.com/proxy" target="_blank" rel="noopener">Apify Proxy</a> or your own Proxy URLs provided and
+rotated according to the configuration. For more information, see the <a href="https://docs.apify.com/proxy" target="_blank" rel="noopener">documentation</a>.</p>
+<hr>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#properties">Properties</a><ul class="toc-headings"><li><a href="#maxopenpagesperinstance"><code>maxOpenPagesPerInstance</code></a></li><li><a href="#retireinstanceafterrequestcount"><code>retireInstanceAfterRequestCount</code></a></li><li><a href="#puppeteeroperationtimeoutsecs"><code>puppeteerOperationTimeoutSecs</code></a></li><li><a href="#instancekillerintervalsecs"><code>instanceKillerIntervalSecs</code></a></li><li><a href="#killinstanceaftersecs"><code>killInstanceAfterSecs</code></a></li><li><a href="#launchpuppeteerfunction"><code>launchPuppeteerFunction</code></a></li><li><a href="#launchpuppeteeroptions"><code>launchPuppeteerOptions</code></a></li><li><a href="#recyclediskcache"><code>recycleDiskCache</code></a></li><li><a href="#useincognitopages"><code>useIncognitoPages</code></a></li><li><a href="#sessionpool"><code>sessionPool</code></a></li><li><a href="#proxyconfiguration"><code>proxyConfiguration</code></a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/apify_logo.svg" alt="Apify SDK v2" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/guides/motivation">Guide</a><a href="/docs/examples/crawl-multiple-urls">Examples</a><a href="/docs/api/apify">API Reference</a></div><div><h5>Community</h5><a href="https://stackoverflow.com/questions/tagged/apify" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://twitter.com/apify" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://www.facebook.com/apifytech" target="_blank" rel="noreferrer noopener">Facebook</a></div><div><h5>More</h5><a href="https://apify.com" target="_blank">Apify Cloud</a><a href="https://docusaurus.io" target="_blank">Docusaurus</a><a href="https://github.com/apify/apify-sdk-v2" target="_blank">GitHub</a></div></section><section class="copyright">Copyright © 2022 Apify Technologies s.r.o.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                appId: 'N8EOCSBQGH',
+                apiKey: 'b43e67a96ed18c7f63f5fd965906a96d',
+                indexName: 'apify_sdk',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {"facetFilters":["version:2.0.1"]}
+              });
+            </script></body></html>
