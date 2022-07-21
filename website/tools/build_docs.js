@@ -3,15 +3,9 @@ const fs = require('fs-extra');
 const jsdoc2md = require('jsdoc-to-markdown'); // eslint-disable-line
 const path = require('path');
 const prettier = require('prettier'); // eslint-disable-line
-const got = require('got');
 const prettierConfig = require('./prettier.config');
-const sidebars = require('../sidebars.json');
 
 const BASE_URL = '..';
-const DOCS_DIR = path.join(__dirname, '..', '..', 'docs');
-const EXAMPLES_DIR_NAME = path.join(DOCS_DIR, 'examples');
-const EXAMPLES_REPO = 'https://api.github.com/repos/apify/actor-templates/contents/dist/examples';
-
 
 const classNames = [];
 const namespaces = [];
@@ -119,33 +113,6 @@ const generateFinalMarkdown = (title, text, entityMap) => {
     return prettier.format(header + text, prettierConfig);
 };
 
-async function getExamplesFromRepo() {
-    await fs.emptyDir(EXAMPLES_DIR_NAME);
-    process.chdir(EXAMPLES_DIR_NAME);
-    const body = await got(EXAMPLES_REPO).json();
-    const builtExamples = await buildExamples(body);
-    await addExamplesToSidebars(builtExamples);
-}
-
-async function buildExamples(exampleLinks) {
-    const examples = [];
-    for (const example of exampleLinks) {
-        const fileContent = await got(example.download_url).text();
-        console.log(`Rendering example ${example.name}`);
-        const markdown = prettier.format(fileContent, prettierConfig);
-        fs.writeFileSync(example.name, markdown);
-        const exampleName = example.name.split('.')[0];
-        examples.push(`examples/${exampleName.replace(/_/g, '-')}`);
-    }
-    return examples;
-}
-
-async function addExamplesToSidebars(examples) {
-    console.log('Saving examples to sidebars.json');
-    sidebars.docs.Examples = examples;
-    fs.writeFileSync(path.join(__dirname, '..', 'sidebars.json'), JSON.stringify(sidebars, null, 4));
-}
-
 
 const main = async () => {
     /* input and output paths */
@@ -158,9 +125,6 @@ const main = async () => {
         files: sourceFiles,
         configure: path.join(__dirname, 'conf.json'),
     });
-
-    // handle examples
-    await getExamplesFromRepo();
 
     const EMPTY = {};
 
