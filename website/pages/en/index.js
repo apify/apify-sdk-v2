@@ -102,10 +102,10 @@ class HomeSplash extends React.Component {
                     className="github-button"
                     href={this.props.config.repoUrl}
                     data-icon="octicon-star"
-                    data-count-href="/apify/apify-js/stargazers"
+                    data-count-href="/apify/crawlee/stargazers"
                     data-show-count="true"
                     data-count-aria-label="# stargazers on GitHub"
-                    aria-label="Star Apify SDK on GitHub">
+                    aria-label="Star Crawlee on GitHub">
                     Star
                 </a>
             </SplashContainer>
@@ -126,7 +126,7 @@ const Features = () => (
     <Block layout="fourColumn" paddingBottomOnly>
         {[
             {
-                content: '**JavaScript** is the language of the web. Apify SDK builds on popular tools like [playwright](https://www.npmjs.com/package/playwright), ' +
+                content: '**JavaScript** is the language of the web. Apify SDK v2 builds on popular tools like [playwright](https://www.npmjs.com/package/playwright), ' +
                     '[puppeteer](https://www.npmjs.com/package/puppeteer) and [cheerio](https://www.npmjs.com/package/cheerio), ' +
                     'to deliver **large-scale high-performance** web scraping and crawling of any website.',
                 image: imgUrl('javascript_logo.svg'),
@@ -142,7 +142,7 @@ const Features = () => (
                 title: 'Automates any web workflow',
             },
             {
-                content: 'Apify SDK can be used **stand-alone** on your own systems or it can run as a **serverless microservice on the Apify Platform**. ' +
+                content: 'Apify SDK v2 can be used **stand-alone** on your own systems or it can run as a **serverless microservice on the Apify Platform**. ' +
                     '[Get started with Apify Platform](https://my.apify.com/actors)',
                 image: imgUrl('cloud_icon.svg'),
                 imageAlign: 'top',
@@ -211,7 +211,7 @@ const TryOut = () => (
     <Block id="try" background="light" gridBlockAlign="left">
         {[
             {
-                content: 'Install **Apify SDK** into a Node.js project. You must have Node.js 10 or higher installed.\n' +
+                content: 'Install **Apify SDK v2** into a Node.js project. You must have Node.js 10 or higher installed.\n' +
                     '```\n' +
                     'npm install apify@^2.3.2 puppeteer\n' +
                     '```\n' +
