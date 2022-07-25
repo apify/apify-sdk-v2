@@ -84,7 +84,10 @@ class HomeSplash extends React.Component {
                     padding: 20,
                     boxShadow: '2px 2px 10px #ccc',
                     margin: '20px 0 50px',
-                }}>Check out <a href="https://crawlee.dev/docs/upgrading/upgrading-to-v3" target="_blank">Crawlee</a>, the successor to Apify SDK v2!</h2>
+                }}>
+                    Apify SDK v2 is no longer maintained.
+                    Check out <a href="https://crawlee.dev/docs/upgrading/upgrading-to-v3" target="_blank">Crawlee</a>, its successor!
+                </h2>
                 {/*<Logo img_src={imgUrl('apify_logo.svg')}/>*/}
                 <div className="inner">
                     <ProjectTitle/>

@@ -3,6 +3,7 @@
 if [ -z $1 ] || [ -z $2 ]; then
     echo "Deploys new website content to https://sdk.apify.com"
     echo "Usage: ./publish_docs.sh <ALGOLIA_API_KEY> <GITHUB_USERNAME>"
+    echo "Usage: ./publish_docs.sh b43e67a96ed18c7f63f5fd965906a96d b4nan"
     exit 1
 fi
 
