@@ -100,7 +100,7 @@ Apify SDK requires [Node.js](https://nodejs.org/en/) 15.10 or later.
 Add Apify SDK to any Node.js project by running:
 
 ```bash
-npm install apify playwright
+npm install apify@^2.3.2 playwright
 ```
 
 > Neither `playwright` nor `puppeteer` are bundled with the SDK to reduce install size and allow greater

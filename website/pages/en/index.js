@@ -213,7 +213,7 @@ const TryOut = () => (
             {
                 content: 'Install **Apify SDK** into a Node.js project. You must have Node.js 10 or higher installed.\n' +
                     '```\n' +
-                    'npm install apify puppeteer\n' +
+                    'npm install apify@^2.3.2 puppeteer\n' +
                     '```\n' +
                     'Copy the following code into a file in the project, for example `main.js`:\n' +
                     '```\n' +
