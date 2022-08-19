@@ -19,8 +19,8 @@ const siteConfig = {
     // eslint-disable-next-line max-len
     tagline: 'The scalable web crawling, scraping and automation library for JavaScript/Node.js.',
     url: 'https://sdk.apify.com', // Your website URL
-    cname: 'sdk.apify.com',
-    baseUrl: '/', // Base URL for your project */
+//    cname: 'sdk.apify.com',
+    baseUrl: '/apify-sdk-v2', // Base URL for your project */
 
     // Used for publishing and more
     projectName: 'apify-sdk-v2',
@@ -48,16 +48,16 @@ const siteConfig = {
         secondaryColor: '#FF9012',
     },
 
-    algolia: {
-        // The key is search-only and safe to publish.
-        appId: 'N8EOCSBQGH',
-        apiKey: 'b43e67a96ed18c7f63f5fd965906a96d',
-        indexName: 'apify_sdk',
-        // Optional, if provided by Algolia
-        algoliaOptions: {
-            facetFilters: ['version:VERSION'],
-        },
-    },
+//     algolia: {
+//         // The key is search-only and safe to publish.
+//         appId: 'N8EOCSBQGH',
+//         apiKey: 'b43e67a96ed18c7f63f5fd965906a96d',
+//         indexName: 'apify_sdk',
+//         // Optional, if provided by Algolia
+//         algoliaOptions: {
+//             facetFilters: ['version:VERSION'],
+//         },
+//     },
 
     // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
     copyright: `Copyright © ${new Date().getFullYear()} Apify Technologies s.r.o.`,
