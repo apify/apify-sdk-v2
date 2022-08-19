@@ -18,9 +18,8 @@ const siteConfig = {
     // TODO: Take this from package.json
     // eslint-disable-next-line max-len
     tagline: 'The scalable web crawling, scraping and automation library for JavaScript/Node.js.',
-    url: 'https://sdk.apify.com', // Your website URL
-//    cname: 'sdk.apify.com',
-    baseUrl: '/apify-sdk-v2', // Base URL for your project */
+    url: 'https://apify.github.io', // Your website URL
+    baseUrl: '/apify-sdk-v2/', // Base URL for your project */
 
     // Used for publishing and more
     projectName: 'apify-sdk-v2',
